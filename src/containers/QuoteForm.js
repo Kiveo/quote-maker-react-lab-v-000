@@ -6,7 +6,7 @@ import { addQuote } from '../actions/quotes';
 import { bindActionCreators } from 'redux';
 
 class QuoteForm extends Component {
-
+  // default state
   state = {
     content: '',
     author: ''
