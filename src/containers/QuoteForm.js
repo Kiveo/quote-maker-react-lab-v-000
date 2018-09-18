@@ -53,6 +53,7 @@ class QuoteForm extends Component {
                         value={this.state.content}
                         // name for DOM grab
                         name="content"
+                        // user updating state for submission
                         onChange={this.handleOnChange}
                       />
                     </div>
