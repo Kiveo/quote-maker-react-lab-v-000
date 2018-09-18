@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import { addQuote } from '../actions/quotes';
+
+import { bindActionCreators } from 'redux';
 
 class QuoteForm extends Component {
 
