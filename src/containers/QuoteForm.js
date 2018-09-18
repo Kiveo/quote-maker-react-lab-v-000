@@ -89,4 +89,12 @@ class QuoteForm extends Component {
 
 //add arguments to connect as needed
 // export default connect()(QuoteForm);
-export default connect(null, {addQuote})(QuoteForm)
+// export default connect(null, {addQuote})(QuoteForm)
+
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({
+    addQuote: addQuote
+  }, dispatch)
+}
+ //add arguments to connect as needed	//add arguments to connect as needed
+export default connect()(QuoteForm);	export default connect(null, mapDispatchToProps)(QuoteForm);
