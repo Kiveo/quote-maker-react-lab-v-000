@@ -51,6 +51,8 @@ class QuoteForm extends Component {
                       <textarea
                         className="form-control"
                         value={this.state.content}
+                        // name for DOM grab
+                        name="content"
                       />
                     </div>
                   </div>
