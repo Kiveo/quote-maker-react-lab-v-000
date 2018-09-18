@@ -15,6 +15,7 @@ const QuoteCard = ({quote, upvoteQuote, downvoteQuote, removeQuote}) =>
           <button
             type="button"
             className="btn btn-primary"
+            onClick={() => upvoteQuote(quote.id)}
           >
             Upvote
           </button>
